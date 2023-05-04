@@ -2,5 +2,5 @@
     <string name="app_name">Demo simple click</string>
     <string name="hint">Enter something</string>
     <string name="button">Display</string>
-    <string name="expl">Display what the user enters</string>
+    <string name="explanation">Display what the user enters</string>
 </resources>
