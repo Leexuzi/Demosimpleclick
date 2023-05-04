@@ -24,10 +24,12 @@ public class MainActivity extends AppCompatActivity {
         etInput = findViewById(R.id.editTextInput);
         btnDisplay.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
+                // Code for the action
                 String stringResponse = etInput.getText().toString();
                 tvDisplay.setText(stringResponse);
             }
         });
+
     }
 }
