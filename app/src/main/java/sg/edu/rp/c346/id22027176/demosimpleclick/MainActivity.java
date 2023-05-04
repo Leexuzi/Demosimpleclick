@@ -39,22 +39,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Code for the action
                 String stringResponse = etInput.getText().toString();
-                tvDisplay.setText(stringResponse);
-            }
-        });
-        btnDisplay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Code for the action
-                String stringResponse = etInput.getText().toString();
                 int checkedRadioId = rgGender.getCheckedRadioButtonId();
                 if(checkedRadioId == R.id.radioButtonGenderMale){
                     // Write the code when male selected
-
+                    stringResponse = "He says " + stringResponse;
                 }
-                else{
+                else {
                     // Write the code when female selected
-
+                    stringResponse = "She says " + stringResponse;
                 }
                 tvDisplay.setText(stringResponse);
             }
@@ -64,14 +56,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Add your code for the action
                 //check button allow text input
-
                 boolean isChecked = tbtn.isChecked();
-                if(isChecked){
-                    etInput.setEnabled(true);
-                }
-                else{
-                    etInput.setEnabled(false);
-                }
+                etInput.setEnabled(isChecked);
             }
         });
 
