@@ -3,4 +3,8 @@
     <string name="hint">Enter something</string>
     <string name="button">Display</string>
     <string name="explanation">Display what the user enters</string>
+    <string name="disabled">DISABLED</string>
+    <string name="enabled">ENABLED</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
 </resources>
